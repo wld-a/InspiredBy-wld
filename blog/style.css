@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p {
+    color: #666;
+}
+
+.post .author {
+    font-style: italic;
+    color: #999;
+}
+
+.post .date {
+    font-size: 0.8em;
+    color: #aaa;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #666;
+}
+
+.navBar a, li{
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    color: var(--thr);
+    padding: 5px;
+    font-size: 21px;
+    text-shadow: none;
+    transition: all .3s ease-in-out;
+}
+
+.navBar .navLinks, .navLinks2{
+    display: flex;
+}
+
+.navBar a, li:hover{
+    color: white;
+    animation: textHold infinite 1s;
+}
+
+@keyframes textHold {
+    0%{
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 20px #fff;
+    }
+    50%{
+        text-shadow: 0 0 20px #fff,
+                     0 0 30px #fff,
+                     0 0 40px #fff;
+    }
+    100%{
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 20px #fff;
+    }
+}
+
+#logo{
+    color: #fff;
+}
